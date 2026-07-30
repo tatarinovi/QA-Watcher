@@ -1,0 +1,26 @@
+[
+  {
+    "id": 320,
+    "status": "success",
+    "sha": "3200000000000000000000000000000000000000",
+    "finished_at": "2026-07-29T17:20:00Z",
+    "environment": {"name": "TEST"},
+    "deployable": {"status": "success", "pipeline": {"id": 1320}}
+  },
+  {
+    "id": 321,
+    "status": "success",
+    "sha": "3210000000000000000000000000000000000000",
+    "finished_at": "2026-07-29T17:21:00Z",
+    "environment": {"name": "TEST"},
+    "deployable": {"status": "success", "pipeline": {"id": 1321}}
+  },
+  {
+    "id": 322,
+    "status": "success",
+    "sha": "3220000000000000000000000000000000000000",
+    "finished_at": "2026-07-29T17:22:00Z",
+    "environment": {"name": "TEST"},
+    "deployable": {"status": "success", "pipeline": {"id": 1322}}
+  }
+]

@@ -1,0 +1,5 @@
+schema_version: 1
+repositories:
+  - gitlab_host: git.russpass.dev
+    project_id: 123
+    local_path: /absolute/path/to/local/clone
