@@ -1,0 +1,12 @@
+.git
+.venv
+.pytest_cache
+.mypy_cache
+.ruff_cache
+__pycache__
+*.py[cod]
+.env
+.hermes
+reports/**/*.md
+data/state.json
+data/*.lock

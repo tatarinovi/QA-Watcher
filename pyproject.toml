@@ -1,0 +1,51 @@
+[project]
+name = "qa-watcher"
+version = "0.1.0"
+description = "Read-only GitLab deployment watcher with a durable MCP queue"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+keywords = ["gitlab", "mcp", "qa", "deployment", "telegram"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = [
+  "apscheduler>=3.11,<4",
+  "fastapi>=0.115",
+  "filelock>=3.16",
+  "httpx>=0.28",
+  "mcp>=1.12,<2",
+  "pydantic>=2.10",
+  "pydantic-settings>=2.10",
+  "uvicorn>=0.34",
+]
+
+[dependency-groups]
+dev = [
+  "mypy>=1.14",
+  "pytest>=8.3",
+  "ruff>=0.9",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = [
+  "ignore:Using `httpx` with `starlette.testclient` is deprecated:starlette.exceptions.StarletteDeprecationWarning",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["apscheduler.*"]
+ignore_missing_imports = true

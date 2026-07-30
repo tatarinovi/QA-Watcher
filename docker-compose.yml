@@ -1,0 +1,22 @@
+services:
+  watcher:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      STATE_PATH: /app/data/state.json
+      REPORTS_PATH: /app/reports
+      BIND_HOST: 0.0.0.0
+      PORT: 8000
+      ALLOW_UNSAFE_NON_LOOPBACK: "true"
+      MCP_ALLOWED_HOSTS: '["localhost"]'
+    ports:
+      - "127.0.0.1:${WATCHER_PORT:-8787}:8000"
+    volumes:
+      - watcher-data:/app/data
+      - watcher-reports:/app/reports
+
+volumes:
+  watcher-data:
+  watcher-reports:

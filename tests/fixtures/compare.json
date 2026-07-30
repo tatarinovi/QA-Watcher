@@ -1,0 +1,12 @@
+{
+  "3200000000000000000000000000000000000000..3210000000000000000000000000000000000000": {
+    "compare_timeout": false,
+    "compare_same_ref": false,
+    "diffs": [{"old_path": "release.txt", "new_path": "release.txt", "diff": "SECRET PATCH 321"}]
+  },
+  "3210000000000000000000000000000000000000..3220000000000000000000000000000000000000": {
+    "compare_timeout": false,
+    "compare_same_ref": false,
+    "diffs": [{"old_path": "feature.py", "new_path": "feature.py", "diff": "SECRET PATCH 322"}]
+  }
+}
