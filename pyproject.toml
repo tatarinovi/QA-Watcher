@@ -21,7 +21,7 @@ dependencies = [
   "mcp>=1.12,<2",
   "pydantic>=2.10",
   "pydantic-settings>=2.10",
-  "uvicorn>=0.34",
+  "uvicorn>=0.52.1",
 ]
 
 [dependency-groups]
