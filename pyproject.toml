@@ -20,7 +20,7 @@ dependencies = [
   "httpx>=0.28",
   "mcp>=1.12,<2",
   "pydantic>=2.10",
-  "pydantic-settings>=2.10",
+  "pydantic-settings>=2.15.0",
   "uvicorn>=0.34",
 ]
 
